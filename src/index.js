@@ -1,16 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import CreditCardForm from './components/credit-card-form';
+import FormPage from './pages/form-page';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-          <CreditCardForm />
-      </div>
-    );
-  }
-}
+const App = () => <FormPage />;
 
 ReactDOM.render(<App />, document.querySelector("#root"));
