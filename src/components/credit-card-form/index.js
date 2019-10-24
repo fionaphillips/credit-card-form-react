@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik, Field, Form } from "formik";
 
+import Label from '../common/Label';
 import { CardFormStyled } from "./styled";
 
 const initialValues = {
@@ -32,12 +33,15 @@ const CreditCardForm = () => {
           <Form>
             <div className="row">
               <div className="col">
+                <Label text="Card Number"/>
                 <Field name="cardNum" type="text" />
               </div>
               <div className="col">
+              <Label text="Card Name"/>
                 <Field name="cardName" type="text" />
               </div>
               <div className="col">
+              <Label text="Expiration Date"/>
                 <Field
                   name="expirDate.month"
                   type="text"
@@ -48,6 +52,7 @@ const CreditCardForm = () => {
                   type="text"
                   className="expirDateYear"
                 />
+                <Label text="CVV"/>
                 <Field name="cvv" type="text" className="cvv" />
               </div>
             </div>
