@@ -21,4 +21,13 @@ export const CardFormStyled = styled.div`
     justify-content: center;
     align-items: center;
   }
+
+  button {
+      width: 100%;
+  }
+
+  .col-expirDate,
+  .col-cvv {
+    display: inline-block;
+  }
 `;
